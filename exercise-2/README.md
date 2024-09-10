@@ -1,29 +1,39 @@
-# Exercise 2 - Git Ready
+## Introduction
 
-## Description
+Hello 👋 thank you for showing your interest in Bits of Good! This take home assessment will assess your basic web development skills. The bootcamp generally requires having some knowledge beforehand in HTML/CSS to be successful, so this assessment will serve as a reflection of your ability to work with HTML/CSS.
 
-In this exercise, bootcampers will familiarize themselves with Unix Commands, Git, and GitHub.
+We have provided a sample HTML/CSS boilerplate but feel free to customize this repository to your needs or create your own. Because this assessment is very open ended, there are many ways to complete this assessment. Our only rules are:
 
-## Submission
+- Please use only vanilla HTML, CSS, and Javascript (optional)
+- Do not use any libraries or frameworks such as Bootstrap, Jquery, React, etc.
+- CSS files can be named anything
+- Please make sure to name the file `index.html`
+- Please deploy your completed assignment to [GitHub Pages](https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-github-pages-site) and share the link with us
 
-Collect points for this exercise by creating and having the correct contents for the GitHub repo specified in the Instructions.
+To submit your project:
+- commit your code to GitHub (preferred) or another version control platform
+- share a link to your repository in our application
+- share a link to your GitHub Pages deployment in our application
 
-- **Due Date**: 9-10-2024
+## Context
 
-## Instructions
+For this assessment you will introduce yourself to the Bits of Good team by creating a small info page! This page can be formatted and styled however you wish, but it should take the form of a "card". This take home assessment will be a way for us to gauge your knowledge of HTML and CSS.
 
-This exercise involves setting up your GitHub repo in the BoG Dev Bootcamp Organization. This repo is where you will submit all exercises throughout the bootcamp.
+## Basic Requirements
 
-1. Go to the [exercises](https://github.com/BoG-Dev-Bootcamp-F24/exercises) repo on GitHub
-2. Click **Fork** in the top right corner
-3. Change the **Owner** to **BoG-Dev-Bootcamp-F24**
-4. Rename the repo `bootcamp-f24-yourname`
-5. Click **Create Fork**
-6. When the new repo has been created, click **Code** and **HTTPS** and copy the text
-7. Open Terminal or Git Bash on your computer and clone the repo with the command `git clone https://github.com/BoG-Dev-Bootcamp-F24/bootcamp-f24-yourname.git` (make sure you know where this folder is located for future reference)
-8. Navigate into the `bootcamp-f24-yourname` directory that was just created via the clone command
-9. Navigate into the `exercise-2` folder
-10. Add the intro card files you wrote for your bootcamp application into the folder
-11. Stage, commit, and push these changes to GitHub
+In your card, include the following information:
 
-**Word of advice for future exercises** -> Before starting an exercise, make sure your repo is up-to-date with the main repo (we will be updating it with new exercises regularly!). Check by clicking **Sync Fork** and **Update branch** if needed. Then pull the changes to your local repo with `git pull origin main`.
+- Name
+- Major
+- Year
+- Something you are passionate about related to social good
+- Where you're from (optional)
+
+## Above and Beyond (Optional)
+
+- Include animations using CSS or Javascript
+- Make your card interactive with buttons, text inputs, etc.
+
+## Sample Card
+
+![Sample Card](https://i.imgur.com/roVObwx.png)

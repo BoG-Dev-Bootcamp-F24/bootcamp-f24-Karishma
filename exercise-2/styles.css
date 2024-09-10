@@ -1,0 +1,88 @@
+/* styles.css */
+
+body {
+  background-color: #f0f0f0; 
+  font-family: 'Arial', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.card {
+  background-color: #000000; 
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  width: 350px;
+  padding: 20px;
+  text-align: center;
+  position: relative;
+  border: 2px solid; 
+  border-image: linear-gradient(135deg, #a2d5f2, #ff66b2) 1;
+}
+
+h1 {
+  color: #ffffff; 
+  margin-bottom: 15px;
+}
+
+.profile-img {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+.profile-img img {
+  border-radius: 50%;
+  width: 100px; 
+  height: 100px; 
+  object-fit: cover;
+  border: 4px solid #a2d5f2; 
+}
+
+.intro, .passion {
+  color: #ffffff; 
+  margin-bottom: 20px;
+}
+
+.passion {
+  font-style: italic; 
+}
+
+.btn {
+  background-color: #ff66b2; 
+  color: #ffffff; 
+  border: none;
+  border-radius: 50px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #ff99cc; 
+}
+
+body::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, #a2d5f2, #ff66b2); 
+  z-index: -1;
+}
+
+h1, .intro, .passion {
+  text-shadow: 2px 2px 4px #000000; 
+}
