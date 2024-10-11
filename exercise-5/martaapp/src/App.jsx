@@ -1,4 +1,5 @@
-import LinesPage from "./pages/LinesPage";
+import LinesPage from './pages/LinesPage.jsx';
+
 
 function App() {
   return (

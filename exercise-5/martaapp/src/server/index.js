@@ -1,53 +1,39 @@
-const express = require("express");
-const mongoose = require("mongoose");
-const cors = require("cors");
+// Use import syntax instead of require
+import express from "express";
+import mongoose from "mongoose";
+import cors from "cors";
+
 
 const app = express();
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 5001;
 
-// Middleware
-app.use(cors());
-app.use(express.json());
+app.use(cors()); // Enable CORS for frontend-backend communication
 
-// MongoDB Connection
-const MONGODB_URI = "your-mongodb-connection-string"; // Replace with your MongoDB URI
-mongoose.connect(MONGODB_URI, { useNewUrlParser: true, useUnifiedTopology: true })
-  .then(() => console.log("MongoDB connected"))
-  .catch(err => console.log(err));
+mongoose.connect("mongodb+srv://karishmakamalahasan:Brdxb@220205@marta.dyoha.mongodb.net/?retryWrites=true&w=majority");
 
-// Schemas
 const trainSchema = new mongoose.Schema({
+  TRAIN_ID: String,
+  DESTINATION: String,
   LINE: String,
   DELAY: String,
-  DESTINATION: String,
-  NEXT_ARR: String,
 });
 
 const stationSchema = new mongoose.Schema({
-  name: String,
-  line: String,
+  NAME: String,
+  LINE: String,
 });
 
 const Train = mongoose.model("Train", trainSchema);
 const Station = mongoose.model("Station", stationSchema);
 
-// API Endpoints
 app.get("/api/trains", async (req, res) => {
-  try {
-    const trains = await Train.find();
-    res.json(trains);
-  } catch (err) {
-    res.status(500).send(err);
-  }
+  const trains = await Train.find();
+  res.json(trains);
 });
 
 app.get("/api/stations", async (req, res) => {
-  try {
-    const stations = await Station.find();
-    res.json(stations);
-  } catch (err) {
-    res.status(500).send(err);
-  }
+  const stations = await Station.find();
+  res.json(stations);
 });
 
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
